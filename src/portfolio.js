@@ -156,10 +156,35 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
+      role: 'Jr. Innovation Engineer',
+      company: 'Nile Uinversity',
+      companylogo: require('./assets/images/NU.png'),
+      date: 'Aug 2021 – Jan 2022',
+      desc:
+        'Adept new technologies to be used by NU students and staff. T.A for Physical Sensors Course',
+      descBullets: [
+        'Teaching',
+        'Innovation',
+      ],
+    },
+    {
+      role: 'Jr. Software Engineer',
+      company: 'Intixel',
+      companylogo: require('./assets/images/Int.png'),
+      date: 'July 2021 – Dec 2021',
+      desc:
+        'Developing Annotation tool which used by the Doctors to annotate the possible infected areas from Memogram images and send it back to the machine learning model to improve the overall performance.',
+      descBullets: [
+        'Reactjs/Redux',
+        'Django',
+      ],
+    },
+    
+    {
       role: 'Full Stack Devleoper',
       company: 'Funnelll',
       companylogo: require('./assets/images/FU.png'),
-      date: 'Aug 2020 – Oct 2020',
+      date: 'Nov 2020 – Feb 2021',
       desc:
         'Set up and integrate your marketing stack. Get actionable insights on how to get more sales from your marketing budget.',
       descBullets: [
@@ -210,6 +235,7 @@ const workExperiences = {
 To know how to get github key look at readme.md */
 
 const openSource = {
+  
   githubConvertedToken: process.env.REACT_APP_GITHUB_TOKEN,
   githubUserName: 'Moadell', // Change to your github username to view your profile in Contact Section.
   showGithubProfile: 'true', // Set true or false to show Contact profile using Github, defaults to true
@@ -367,8 +393,9 @@ const twitterDetails = {
   userName: 'twitter', //Replace "twitter" with your twitter username without @
   display: false, // Set true to display this section, defaults to false
 };
-
+console.log(process.env.REACT_APP_GITHUB_TOKEN)
 export {
+  
   illustration,
   greeting,
   socialMediaLinks,

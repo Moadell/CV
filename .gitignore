@@ -9,6 +9,8 @@
 /coverage
 /build
 
+.process.env
+
 
 # misc
 .DS_Store
